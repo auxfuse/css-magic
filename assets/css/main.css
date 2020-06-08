@@ -20,9 +20,12 @@
 body {
     background-color: var(--primary-color);
     color: var(--highlight);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-/* Navbar */
+    /* Navbar */
 .navbar {
     background-color: var(--highlight);
 }
@@ -31,7 +34,29 @@ body {
     height: 70px;
 }
 
-/* Content */
+.navbar-light .navbar-nav .nav-link {
+    font-family: var(--primary-font);
+    color: var(--primary-color)
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    font-family: var(--primary-font);
+    color: var(--tertiary-color)
+}
+
+.navbar-light .navbar-toggler {
+    border-color: transparent;
+}
+
+    /* Footer */
+
+
+/* Main section */
+.main-section {
+    margin: 96px auto 0;
+    flex: 1
+}
+
 .welcome {
     font-family: var(--primary-font);
 }
