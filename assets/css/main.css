@@ -4,7 +4,7 @@
 /* Root Variables */
 :root {
     --primary-font: 'Electrolize', sans-serif;
-    --secondary-font: font-family: 'Quicksand', sans-serif;
+    --secondary-font: 'Quicksand', sans-serif;
     --primary-color: #4f48ec;
     --secondary-color: #c8c7dd;
     --tertiary-color: #100e34;
@@ -20,6 +20,15 @@
 body {
     background-color: var(--primary-color);
     color: var(--highlight);
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--highlight);
+}
+
+.navbar-brand img {
+    height: 70px;
 }
 
 /* Content */
