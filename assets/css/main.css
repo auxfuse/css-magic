@@ -1,0 +1,32 @@
+/* Font imports */
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Quicksand&display=swap');
+
+/* Root Variables */
+:root {
+    --primary-font: 'Electrolize', sans-serif;
+    --secondary-font: font-family: 'Quicksand', sans-serif;
+    --primary-color: #4f48ec;
+    --secondary-color: #c8c7dd;
+    --tertiary-color: #100e34;
+    --highlight: #ffffff;
+}
+
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--primary-color);
+    color: var(--highlight);
+}
+
+/* Content */
+.welcome {
+    font-family: var(--primary-font);
+}
+
+.welcome-text {
+    font-family: var(--secondary-font);
+}
