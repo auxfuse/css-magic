@@ -1,10 +1,11 @@
 /* Font imports */
-@import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Electrolize&family=Quicksand&display=swap');
 
 /* Root Variables */
 :root {
     --primary-font: 'Electrolize', sans-serif;
     --secondary-font: 'Quicksand', sans-serif;
+    --tertiary-font: 'Anton', sans-serif;
     --primary-color: #4f48ec;
     --secondary-color: #c8c7dd;
     --tertiary-color: #100e34;
@@ -78,11 +79,24 @@ footer {
 }
 
 .welcome {
-    font-family: var(--primary-font);
+    font-size: 4rem;
+    font-family: var(--tertiary-font);
+    letter-spacing: 1rem;
+    margin: 1rem auto;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px var(--secondary-color);
+    /* DEVNOTE: Remove/Reuse somewhere else, consider section on font color gradient below two lines... */
+    /*background: linear-gradient(180deg, rgba(79,72,236,1) 0%, rgba(16,14,52,1) 70%);*/
+    /*-webkit-background-clip: text;*/
 }
 
 .welcome-text {
     font-family: var(--secondary-font);
+}
+
+/* Code block */
+.corner-rounded {
+    border-radius: 1rem;
 }
 
 /* Media Queries */
