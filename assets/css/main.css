@@ -30,6 +30,11 @@ body {
     min-height: 100vh;
 }
 
+code[class*=language-], pre[class*=language-] {
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
     /* Navbar */
 .navbar {
     background-color: var(--highlight);
@@ -74,15 +79,28 @@ footer {
 
 /* Main section */
 .main-section {
-    margin: 96px auto 0;
+    margin-top: 96px;
     flex: 1
+}
+
+#welcome-container {
+    margin: 3rem auto;
+}
+
+#welcome-container:after {
+    content: '';
+    display: block;
+    background: var(--tertiary-color);
+    height: 1px;
+    width: 50%;
+    margin: 1.2rem auto 1rem;
 }
 
 .welcome {
     font-size: 4rem;
     font-family: var(--tertiary-font);
     letter-spacing: 1rem;
-    margin: 1rem auto;
+    margin-bottom: 2rem;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 1px var(--secondary-color);
     /* DEVNOTE: Remove/Reuse somewhere else, consider section on font color gradient below two lines... */
@@ -94,7 +112,20 @@ footer {
     font-family: var(--secondary-font);
 }
 
-/* Code block */
+#code-container {
+    margin: 1rem auto;
+}
+
+    /* Accordion */
+.accordion {
+    border: none;
+}
+
+.accordion .card-body {
+    background-color: var(--primary-color);
+}
+
+    /* Code block */
 .corner-rounded {
     border-radius: 1rem;
 }
